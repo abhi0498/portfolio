@@ -68,6 +68,17 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Okay to Work",
+    kind: "SaaS · live",
+    description:
+      "COI tracking for contractors, property managers and venues. It checks each vendor's certificate of insurance (ACORD 25) against the customer's own requirements, emails vendors exactly what to fix with automatic reminders, and flags anything it can't read clearly for a person to confirm.",
+    tags: ["Document extraction", "ACORD 25", "Email automation", "SaaS"],
+    links: [
+      { label: "okaytowork.com", href: "https://okaytowork.com" },
+      { label: "Free COI checker", href: "https://okaytowork.com/coi-checker" },
+    ],
+  },
+  {
     title: "Translate JSON",
     kind: "npm package",
     description:
