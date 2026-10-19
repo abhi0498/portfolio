@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Abhishek V - Senior Full Stack Engineer",
+  title: "Abhishek V - Technical Lead, Full-Stack & AI Systems",
   description:
-    "Portfolio of Abhishek V, a Senior Full Stack Engineer specializing in React, Vue, Node.js and cloud technologies.",
+    "Portfolio of Abhishek V, a technical lead shipping production web, mobile, backend and AI systems in Python, TypeScript, Node.js and React.",
 };
 
 export default function RootLayout({

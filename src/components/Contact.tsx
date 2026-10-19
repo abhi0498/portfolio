@@ -1,65 +1,43 @@
-'use client'
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin, Mail } from "lucide-react";
 
-import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Send } from 'lucide-react'
-
+// GitHub Pages is static, so there is no backend to receive a form;
+// link straight to the channels that actually reach me.
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({ ...prevState, [name]: value }))
-  }
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    // Here you would typically send the form data to a server
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
-  }
-
   return (
-    <section id="contact" className="py-20">
-      <h2 className="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
-        <Input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <Input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <Textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          rows={5}
-        />
-        <Button type="submit" className="w-full">
-          Send Message
-          <Send className="ml-2 h-4 w-4" />
+    <section id="contact" className="py-20 text-center">
+      <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+      <p className="text-muted-foreground mb-8">
+        Based in Bangalore, India. Email is the fastest way to reach me.
+      </p>
+      <div className="flex flex-wrap gap-4 justify-center">
+        <Button size="lg" asChild>
+          <a href="mailto:abhishekv.dev@gmail.com">
+            <Mail className="mr-2 h-5 w-5" />
+            abhishekv.dev@gmail.com
+          </a>
         </Button>
-      </form>
+        <Button size="lg" variant="outline" asChild>
+          <a
+            href="https://linkedin.com/in/abhishekvdev0498"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin className="mr-2 h-5 w-5" />
+            LinkedIn
+          </a>
+        </Button>
+        <Button size="lg" variant="outline" asChild>
+          <a
+            href="https://github.com/abhi0498"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="mr-2 h-5 w-5" />
+            GitHub
+          </a>
+        </Button>
+      </div>
     </section>
-  )
+  );
 }
-

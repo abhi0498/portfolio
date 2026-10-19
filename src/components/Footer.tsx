@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">
-            &copy; 2024 Abhishek V. All rights reserved.
+            &copy; {new Date().getFullYear()} Abhishek V. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <a
@@ -16,6 +16,14 @@ export default function Footer() {
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Github className="h-6 w-6" />
+            </a>
+            <a
+              href="https://linkedin.com/in/abhishekvdev0498"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
             </a>
             <a
               href="mailto:abhishekv.dev@gmail.com"
