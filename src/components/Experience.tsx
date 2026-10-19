@@ -10,13 +10,13 @@ const experiences = [
   {
     title: "Technical Lead, Full-Stack & AI",
     company: "SmartFoodSafe (rejoined)",
-    period: "Feb 2026 - Present",
+    period: "Feb 2026 - Oct 2026",
     points: [
-      "Lead technology, delivery and code quality across a ~30-repository MERN platform with a junior-heavy team.",
+      "Led technology, delivery and code quality across a ~30-repository MERN platform with a junior-heavy team.",
       "Shipped the Health & Safety module to production and delivered change acknowledgement, a scheduling API integration and a shared form library reused across record modules.",
       "Resolved ~250 SonarQube issues in the UI codebase and set engineering standards: typed OpenAPI contracts, Jenkins quality gates and dependency automation.",
       "Ran engineering hiring end to end, from interview design through coordination to final evaluation.",
-      "Designing a multi-tenant AI assistant in Python and Pydantic AI on the Gemini API with typed tools, structured outputs, tool access scoped by tenant and role, and human approval for sensitive actions; working prototype built.",
+      "Designed a multi-tenant AI assistant in Python and Pydantic AI on the Gemini API with typed tools, structured outputs, tool access scoped by tenant and role, and human approval for sensitive actions, and built a working prototype.",
     ],
   },
   {
