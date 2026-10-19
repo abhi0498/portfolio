@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: "Abhishek V - Technical Lead, Full-Stack & AI Systems",
   description:
     "Portfolio of Abhishek V, a technical lead shipping production web, mobile, backend and AI systems in Python, TypeScript, Node.js and React.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0c0c0e",
 };
 
 export default function RootLayout({
